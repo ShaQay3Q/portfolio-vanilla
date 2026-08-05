@@ -10,39 +10,55 @@
 <body>
 
     <header>
-        <nav>
-            <a href="">Homepage</a>
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+        <nav aria-label="Primary">
+            <a href="#home">Homepage</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <aside class="profile">
-        <!-- image -->
-    </aside>
-    <main>
-        <!-- current page -->
-        <h1>
-            Homepage
-            <!-- current page title -->
-        </h1>
-        <section class="hero">
-            <h2>
-                Hello! I am Shaghayeh...
-            </h2>
-            <p>
-                <!-- infor aboute me -->
-                A frontend Developer currently learning Computer Science.
+    <div class="content">
+        <aside class="profile">
+            <!-- image -->
+        </aside>
+        <main>
+            <!-- current page -->
+            <!-- HOME -->
+            <section id="home" class="home">
+                <h1>
+                    Hello! I am Shaghayeh...
+                </h1>
+                <p>
+                    <!-- infor aboute me -->
+                    A frontend Developer currently learning Computer Science.
+                    I enjoy building accessible, simple and maintainable websites.
+                </p>
+                <a href="">
+                    <!-- should open to about page -->
+                    More about me →
+                </a>
+            </section>
+            
+            <!-- ABOUT -->
+            <section id="about" hidden>
+            </section>
 
-                I enjoy building accessible, simple and maintainable websites.
-            </p>
-            <a href="">
-                <!-- should open to about page -->
-                Learn more about me...
-            </a>
-        </section>
-    </main>
+            <!-- PROJECTS -->
+            <section id="projects" hidden>
+            </section>
+
+            <!-- BLOG -->
+            <section id="blog" hidden>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" hidden>
+            </section>
+
+
+        </main>
+    </div>
     <footer>
         <!-- contact info, linkdin, github link-->
     </footer>
