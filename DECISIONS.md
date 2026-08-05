@@ -34,3 +34,27 @@ I chose CSS :target navigation because:
 Trade-off:
 
 - More difficult to implement dynamic blog features
+
+## Portfolio Structure
+
+portfolio/
+
+│
+├── index.html
+│
+├── css/
+│ └── style.css
+│
+├── js/
+│ └── main.js
+│
+├── assets/
+│ ├── images/
+│ ├── icons/
+│ └── fonts/
+│
+├── blog/
+│
+├── README.md
+│
+└── DECISIONS.md
