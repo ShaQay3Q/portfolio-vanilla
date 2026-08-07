@@ -30,6 +30,7 @@ body {
 /* --------------------------------------------- */
 /* HEADER */
 /* --------------------------------------------- */
+
 .site-header {
 	margin: 10px;
 	grid-area: header;
@@ -43,10 +44,6 @@ body {
 	gap: 60px;
 	list-style-type: none;
 }
-/* .header-nav ul li {
-	/* list-style-type: symbols("|"); */
-/* list-style-type: none; */
-/* }  */
 
 /* --------------------------------------------- */
 /* MAIN */
@@ -69,7 +66,7 @@ main {
 	height: inherit;
 	flex-direction: column;
 	/* align-items: center; */
-	justify-content: start;
+	/* justify-content: start; */
 	gap: 5px;
 	overflow: hidden;
 	grid-area: aside;
@@ -114,9 +111,9 @@ main {
 	width: 100%;
 	height: auto;
 	/* height: 100%; */
-	object-fit: contain;
-	/* object-fit: cover; */
-	/* object-position: left top; */
+	/* object-fit: contain; */
+	object-fit: cover;
+	object-position: left top;
 	display: block;
 }
 
