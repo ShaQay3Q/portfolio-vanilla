@@ -16,7 +16,6 @@ body {
 	padding: 10px 20px;
 	margin: 0;
 	height: 100vh;
-	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: auto;
@@ -31,7 +30,7 @@ body {
 /* --------------------------------------------- */
 /* HEADER */
 /* --------------------------------------------- */
-header {
+.site-header {
 	margin: 10px;
 	grid-area: header;
 }
@@ -39,7 +38,6 @@ header {
 .header-nav ul {
 	padding-right: 60px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: end;
 	gap: 60px;
@@ -56,6 +54,10 @@ header {
 
 .content {
 	grid-area: content;
+}
+
+main {
+	overflow-y: auto;
 }
 
 /* --------------------------------------------- */
