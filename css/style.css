@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+* {
+	margin: 0;
+}
+
 /* --------------------------------------------- */
 /* BODY */
 /* --------------------------------------------- */
@@ -13,10 +17,13 @@ body {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	/* justify-content: space-between; */
-	align-items: stretch;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"aside header"
+		"aside content"
+		"aside footer";
 	gap: 20px;
 	overflow: hidden;
 }
@@ -26,6 +33,7 @@ body {
 /* --------------------------------------------- */
 header {
 	margin: 10px;
+	grid-area: header;
 }
 
 .header-nav ul {
@@ -42,13 +50,7 @@ header {
 /*---------------------------------------------- */
 
 .content {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	height: calc(100vh - 80px);
-	/* flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between; */
-	/* width: 100vw; */
+	grid-area: content;
 }
 
 /* --------------------------------------------- */
@@ -57,30 +59,40 @@ header {
 
 .profile {
 	display: flex;
+	height: inherit;
 	flex-direction: column;
 	/* align-items: center; */
 	justify-content: start;
 	gap: 5px;
 	overflow: hidden;
-}
-
-.profile img {
-	width: 95%;
-	max-height: 80vh;
-	display: block;
-	object-fit: cover;
-	/* height: auto; */
-	margin: 0 auto;
-	transform: scale(0.9); /* then visually scale from there */
-	transform-origin: center; /* or 'top center' if you want it anchored at the top */
+	grid-area: aside;
 }
 
 .profile header {
+	margin-top: 20px;
 	display: flex;
-	flex-direction: column;
-	gap: 5px;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 10px;
 	max-height: 10vh;
+	z-index: -1;
+}
 
-	/* justify-content: space-around; */
-	/* align-items: baseline; */
+.profile img {
+	width: 100%;
+	height: inherit;
+	aspect-ratio: auto; /* optional: modern way to lock ratio */
+	object-fit: contain;
+	object-position: left top;
+	/* transform: scale(0.9); */
+	transform-origin: center; /*keeps it centered */
+	display: block;
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+/*---------------------------------------------- */
+
+footer {
+	grid-area: footer;
 }
