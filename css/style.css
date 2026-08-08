@@ -44,6 +44,11 @@ body {
 	gap: 60px;
 	list-style-type: none;
 }
+.header-nav ul li::before {
+	content: "|";
+
+	margin-right: 10px;
+}
 
 /* --------------------------------------------- */
 /* MAIN */
@@ -105,4 +110,9 @@ main {
 
 footer {
 	grid-area: footer;
+}
+
+.icon {
+	height: 24px;
+	width: 24px;
 }
