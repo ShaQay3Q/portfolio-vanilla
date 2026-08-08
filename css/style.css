@@ -13,7 +13,7 @@
 /* --------------------------------------------- */
 
 body {
-	padding: 10px 20px;
+	padding: 10px 20px 0px 20px;
 	margin: 0;
 	height: 100vh;
 	display: grid;
@@ -63,10 +63,7 @@ main {
 
 .profile {
 	display: flex;
-	height: inherit;
 	flex-direction: column;
-	/* align-items: center; */
-	/* justify-content: start; */
 	gap: 5px;
 	overflow: hidden;
 	grid-area: aside;
@@ -78,22 +75,12 @@ main {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-	/* align-content: baseline; */
 	justify-content: center;
 	gap: 20px;
 	max-height: 10vh;
 }
 
-/* .profile header span {
-	max-width: 20px;
-	max-width: 20px;
-	display: inline-block;
-} */
-
 .profile header p::before {
-	/* content: "•";
-	margin-right: 8px; */
-
 	content: "";
 	display: inline-block;
 	width: 5px;
@@ -102,15 +89,10 @@ main {
 	margin-right: 8px;
 	background: currentColor;
 }
-/* .profile header p::before {
-	content: url("../assets/img/dot-single-svgrepo-com.svg");
-	width: 5px;
-	height: 5px;
-} */
+
 .profile img {
 	width: 100%;
 	height: auto;
-	/* height: 100%; */
 	/* object-fit: contain; */
 	object-fit: cover;
 	object-position: left top;
